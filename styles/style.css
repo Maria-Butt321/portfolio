@@ -1,0 +1,45 @@
+/* ===== Profile Page Styles (Collaborator 1) ===== */
+
+/* Profile Section */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+main section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+main section p {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto 10px auto;
+  text-align: center;
+}
+
+/* Navigation Highlight for Profile Page */
+nav a[href="profile.html"] {
+  color: #FFD700; /* gold highlight for current page */
+}
+
+/* ===== Media Queries ===== */
+@media (max-width: 600px) {
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+  }
+
+  main section h2 {
+    font-size: 1.5rem;
+  }
+
+  main section p {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+}
