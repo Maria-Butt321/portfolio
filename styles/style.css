@@ -1,45 +1,21 @@
-/* ===== Profile Page Styles (Collaborator 2) ===== */
-
-/* Profile Section */
-.profile-photo {
-  width: 100px;   /* Conflicting change */
-  height: 100px;  /* Conflicting change */
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px; /* Conflicting change */
+/* ===== Skills Page Styles (Collaborator 3) ===== */
+.skills-list {
+  list-style: square;
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 0 20px;
 }
 
-main section h2 {
-  font-size: 1.2rem;  /* Conflicting change */
-  margin-bottom: 8px; /* Conflicting change */
+.skills-list li {
+  padding: 8px 0;
+  font-size: 1rem;
+  color: #333;
 }
 
-main section p {
-  font-size: 0.8rem;  /* Conflicting change */
-  line-height: 1.2;   /* Conflicting change */
-  max-width: 500px;   /* Conflicting change */
-  margin: 0 auto 5px auto; /* Conflicting change */
-  text-align: left;   /* Conflicting change */
-}
-
-/* Navigation Highlight for Profile Page */
-nav a[href="profile.html"] {
-  color: #FF0000; /* Conflicting color */
-}
-
-/* ===== Media Queries ===== */
+/* Media Queries */
 @media (max-width: 600px) {
-  .profile-photo {
-    width: 80px;   /* Conflicting change */
-    height: 80px;  /* Conflicting change */
-  }
-
-  main section h2 {
-    font-size: 1rem; /* Conflicting change */
-  }
-
-  main section p {
-    font-size: 0.7rem;  /* Conflicting change */
-    padding: 0 5px;     /* Conflicting change */
+  .skills-list li {
+    font-size: 0.8rem;
+    padding: 5px 0;
   }
 }
