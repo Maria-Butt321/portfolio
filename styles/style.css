@@ -1,21 +1,45 @@
-/* ===== Skills Page Styles (Collaborator 3) ===== */
+/* ===== Achievements Page Styles (Collaborator 4) ===== */
+.achievements-list {
+  list-style: square;
+  max-width: 500px;        /* Custom width */
+  margin: 20px auto;
+  padding: 10px 25px;
+  color: darkblue;
+}
+
+.achievements-list li {
+  padding: 10px 5px;
+  font-size: 1.2rem;
+}
+
+/* ===== Conflicting Skills Styles ===== */
+/* Collaborator 3 had: 
 .skills-list {
   list-style: square;
   max-width: 600px;
   margin: 10px auto;
   padding: 0 20px;
-}
-
-.skills-list li {
-  padding: 8px 0;
-  font-size: 1rem;
   color: #333;
+}
+*/
+
+.skills-list {
+  list-style: circle;       /* Conflict */
+  max-width: 500px;         /* Conflict */
+  margin: 20px auto;        /* Conflict */
+  padding: 10px 25px;       /* Conflict */
+  color: green;             /* Conflict */
 }
 
 /* Media Queries */
 @media (max-width: 600px) {
+  .achievements-list li {
+    font-size: 1rem;
+    padding: 8px 0;
+  }
+
   .skills-list li {
-    font-size: 0.8rem;
-    padding: 5px 0;
+    font-size: 1rem;  /* Conflict: collab3 used 0.8rem */
+    padding: 8px 0;   /* Conflict: collab3 used 5px 0 */
   }
 }
