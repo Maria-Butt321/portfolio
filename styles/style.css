@@ -1,27 +1,45 @@
-/* ===== Projects Page Styles (Collaborator 2) ===== */
-.projects-list {
-  list-style: none;
-  padding: 0;
-  max-width: 700px;
-  margin: 0 auto;
+/* ===== Profile Page Styles (Collaborator 1) ===== */
+
+/* Profile Section */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
 }
 
-.projects-list li {
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
+main section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
 }
 
-/* Media query for mobile */
+main section p {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto 10px auto;
+  text-align: center;
+}
+
+/* Navigation Highlight for Profile Page */
+nav a[href="profile.html"] {
+  color: #FFD700; /* gold highlight for current page */
+}
+
+/* ===== Media Queries ===== */
 @media (max-width: 600px) {
-
-  /* Intentional conflict with Collaborator 1 */
   .profile-photo {
-    width: 120px;  /* Conflicts with 100px in Collaborator 1 */
-    height: 120px; /* Conflicts with 100px in Collaborator 1 */
+    width: 120px;
+    height: 120px;
   }
 
-  .projects-list li {
-    font-size: 12px; /* slight difference to mobile projects list */
-    padding: 6px;
+  main section h2 {
+    font-size: 1.5rem;
+  }
+
+  main section p {
+    font-size: 0.9rem;
+    padding: 0 10px;
   }
 }
