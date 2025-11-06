@@ -1,45 +1,45 @@
-/* ===== Profile Page Styles (Collaborator 1) ===== */
+/* ===== Profile Page Styles (Collaborator 2) ===== */
 
 /* Profile Section */
 .profile-photo {
-  width: 150px;
-  height: 150px;
+  width: 100px;   /* Conflicting change */
+  height: 100px;  /* Conflicting change */
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 15px;
+  margin-bottom: 20px; /* Conflicting change */
 }
 
 main section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
+  font-size: 1.2rem;  /* Conflicting change */
+  margin-bottom: 8px; /* Conflicting change */
 }
 
 main section p {
-  font-size: 1rem;
-  line-height: 1.5;
-  max-width: 600px;
-  margin: 0 auto 10px auto;
-  text-align: center;
+  font-size: 0.8rem;  /* Conflicting change */
+  line-height: 1.2;   /* Conflicting change */
+  max-width: 500px;   /* Conflicting change */
+  margin: 0 auto 5px auto; /* Conflicting change */
+  text-align: left;   /* Conflicting change */
 }
 
 /* Navigation Highlight for Profile Page */
 nav a[href="profile.html"] {
-  color: #FFD700; /* gold highlight for current page */
+  color: #FF0000; /* Conflicting color */
 }
 
 /* ===== Media Queries ===== */
 @media (max-width: 600px) {
   .profile-photo {
-    width: 100px;
-    height: 100px;
+    width: 80px;   /* Conflicting change */
+    height: 80px;  /* Conflicting change */
   }
 
   main section h2 {
-    font-size: 1.5rem;
+    font-size: 1rem; /* Conflicting change */
   }
 
   main section p {
-    font-size: 0.9rem;
-    padding: 0 10px;
+    font-size: 0.7rem;  /* Conflicting change */
+    padding: 0 5px;     /* Conflicting change */
   }
 }
